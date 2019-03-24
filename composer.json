@@ -1,0 +1,39 @@
+{
+    "name": "jchegenye/mypesapal",
+    "description": "A simplified PesaPal integration for your Laravel App.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jackson Chegenye",
+            "email": "chegenyejackson@gmail.com",
+            "homepage": "https://jchegenye.me",
+            "role": "Software Developer"
+        }
+    ],
+    "homepage": "https://github.com/jchegenye/mypesapal",
+    "keywords": ["laravel", "pesapal", "mypesapal", "", "payment", "getway"],
+
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master",
+        "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jchegenye\\MyPesaPal\\": "src/"
+        },
+        "files": [
+            "src/JTech/OAuth.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jchegenye\\MyPesaPal\\MyPesaPalServiceProvider"
+            ]
+        }
+    }
+}
