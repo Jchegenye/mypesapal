@@ -31,22 +31,18 @@ Run this `vendor:publish` command to publish Pesapal configaration file.
 
         2. Authentication / Configuration
 
-            ``` bash
             | 'token_params' => NULL,
             | 'consumer_key' => env('PESAPAL_CONSUMER_KEY', '*** CONSUMER KEY ***'),
             | 'consumer_secret' => env('PESAPAL_CONSUMER_SECRET', '*** YOUR CONSUMER SECRET ***'),
             | 'live_iframelink' => 'https://www.pesapal.com/API/PostPesapalDirectOrderV4',
             | 'demo_iframelink' => 'http://demo.pesapal.com/api/PostPesapalDirectOrderV4'
-            ```
 
         3. Define the callback_url
 
             | This is the full url pointing to the page the iframe redirects to 
             | after processing the order on pesapal.com
 
-            ``` bash
             'callback_url' => env('PESAPAL_CALLBACK_URL', 'http://test.com/payment-gateways-php/pesapal-php/'),
-            ```
 
         4. Field Names
 
@@ -57,7 +53,6 @@ Run this `vendor:publish` command to publish Pesapal configaration file.
             |
             | NOTE: default value = MERCHANT
 
-            ``` bash
             'fields' => [
 
                 'amount' => 'number_format(PESAPAL_FIELD_AMOUNT, 2)', //format amount to 2 decimal places
@@ -70,9 +65,10 @@ Run this `vendor:publish` command to publish Pesapal configaration file.
                 'phonenumber' => 'PESAPAL_FIELD_PHONE' //ONE of email or phonenumber is required
 
             ]
-            ```
 
 To return Pesapal [`Response`][laravel-response-link] use this `response()->pesapal()` Method. For Pesapal to obtain an instance of the current HTTP `Request` add `$request` variable.
+
+See below example:
 
 ``` bash
 response()->pesapal($request)

@@ -49,8 +49,8 @@ return [
 
     'auth' => [
         'token_params' => NULL,
-        'consumer_key' => env('PESAPAL_CONSUMER_KEY', 'nfmMi5nzHllKg4l4KvusvWOhYGpzniz2'),
-        'consumer_secret' => env('PESAPAL_CONSUMER_SECRET', 'q/tmFrtXpRYmuME5uSrDcya366U='),
+        'consumer_key' => env('PESAPAL_CONSUMER_KEY', ''),
+        'consumer_secret' => env('PESAPAL_CONSUMER_SECRET', ''),
         'live_iframelink' => 'https://www.pesapal.com/API/PostPesapalDirectOrderV4',
         'demo_iframelink' => 'http://demo.pesapal.com/api/PostPesapalDirectOrderV4'
     ],
@@ -65,7 +65,7 @@ return [
     | 
     */
 
-    'callback_url' => env('PESAPAL_CALLBACK_URL', 'http://laravel-packages.test/payment-gateways-php/pesapal-php/'),
+    'callback_url' => env('PESAPAL_CALLBACK_URL', 'http://test.com/payment-gateways-php/pesapal-php/'),
 
     /*
     |--------------------------------------------------------------------------
