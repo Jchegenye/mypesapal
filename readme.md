@@ -7,7 +7,7 @@ A simplified [PesaPal][pesapal-link] integration for your Laravel App.
 Via Composer
 
 ``` bash
-$ composer require jchegenye/mypesapal
+composer require jchegenye/mypesapal
 ```
 
 ## Usage
@@ -66,12 +66,14 @@ Run this `vendor:publish` command to publish Pesapal configaration file.
 
             ]
 
-To return Pesapal [`Response`][laravel-response-link] use this `response()->pesapal()` Method. For Pesapal to obtain an instance of the current HTTP `Request` add `$request` variable.
+To return Pesapal [`Response`][laravel-response-link] use this `pesapal()` Method. 
+
+In-order for Pesapal to obtain an instance of the current HTTP `Request` add this `$request` variable.
 
 See below example:
 
 ``` bash
-response()->pesapal($request)
+response()->pesapal($request);
 ```
 
 [pesapal-link]: https://www.pesapal.com/

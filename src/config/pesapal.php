@@ -1,7 +1,5 @@
 <?php
-
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Environment
@@ -14,9 +12,7 @@ return [
     | Production - Means your App is running on a Live Mode
     |
     */
-
     'env' => env('APP_ENV', 'local'),
-
     /*
     |--------------------------------------------------------------------------
     | Authentication / Configuration
@@ -46,7 +42,6 @@ return [
     | & 'consumer secret' to the live account registered on https://pesapal.com
     |
     */
-
     'auth' => [
         'token_params' => NULL,
         'consumer_key' => env('PESAPAL_CONSUMER_KEY', ''),
@@ -54,7 +49,6 @@ return [
         'live_iframelink' => 'https://www.pesapal.com/API/PostPesapalDirectOrderV4',
         'demo_iframelink' => 'http://demo.pesapal.com/api/PostPesapalDirectOrderV4'
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Define the callback_url
@@ -64,9 +58,7 @@ return [
     | after processing the order on pesapal.com
     | 
     */
-
     'callback_url' => env('PESAPAL_CALLBACK_URL', 'http://test.com/payment-gateways-php/pesapal-php/'),
-
     /*
     |--------------------------------------------------------------------------
     | Field Names
@@ -76,9 +68,7 @@ return [
     | application to be used by pesapal.
     | 
     */
-
     'fields' => [
-
         'amount' => 'number_format(PESAPAL_FIELD_AMOUNT, 2)', //format amount to 2 decimal places
         'description' => 'PESAPAL_FIELD_DESC',
         'type' => 'MERCHANT', //default value = MERCHANT
@@ -87,7 +77,5 @@ return [
         'last_name' => 'PESAPAL_FIELD_LNAME',
         'email' => 'PESAPAL_FIELD_EMAIL',
         'phonenumber' => 'PESAPAL_FIELD_PHONE' //ONE of email or phonenumber is required
-
     ]
-
 ];
