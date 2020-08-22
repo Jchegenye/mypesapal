@@ -14,7 +14,6 @@
     "keywords": ["laravel", "pesapal", "mypesapal", "payment", "getway"],
     "require": {
         "php": "^7.2",
-        "laravel/framework": "^5.8",
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
