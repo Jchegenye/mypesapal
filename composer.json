@@ -13,7 +13,7 @@
     "homepage": "https://github.com/jchegenye/mypesapal",
     "keywords": ["laravel", "pesapal", "mypesapal", "payment", "getway"],
     "require": {
-        "php": "^7.2",
+        "php": ">=5.4.0",
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
