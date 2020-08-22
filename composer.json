@@ -14,7 +14,6 @@
     "keywords": ["laravel", "pesapal", "mypesapal", "payment", "getway"],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "~5.0"
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
